@@ -1,0 +1,101 @@
+/* ===== GENERAL LAYOUT ===== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('library.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background-color: rgba(0, 51, 102, 0.85);
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== HEADER ===== */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* ===== INPUT AND BUTTON ===== */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  width: 250px;
+  outline: none;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== BOOK BOX ===== */
+.book, .book-item {
+  background: rgba(255, 255, 255, 0.9);
+  color: #002b5c;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.book:hover, .book-item:hover {
+  transform: scale(1.02);
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #fffdf6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+  width: 95%;
+  height: 60px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
